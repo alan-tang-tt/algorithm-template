@@ -40,6 +40,8 @@ class Solution {
 }
 ```
 
+> 注：这题还有其他更优的解法，这里只是用来说明递归。
+
 # 示例2
 
 二叉树的中序遍历：https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
