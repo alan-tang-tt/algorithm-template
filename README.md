@@ -8,4 +8,6 @@
 
 [1. 递归模板](001_recursion.md)
 
+[2. 二分模板](002_binary_search.md)
+
 
