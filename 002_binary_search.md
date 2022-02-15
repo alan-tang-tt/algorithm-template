@@ -84,7 +84,7 @@ class Solution {
 # 其他
 
 1. `(left + right) / 2` 可以写成 `(left + right) >> 1`，右移一位就是除以2；
-2. 数据范围较大时可以写成 `left + (right - left) /2`，可以防止溢出；
+2. 数据范围较大时可以写成 `left + (right - left) / 2`，可以防止溢出；
 
 # 推荐
 
