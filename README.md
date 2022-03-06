@@ -11,6 +11,8 @@
 
 [2. 二分模板](002_binary_search.md)
 
+[3. 双指针模板](003_double_pointer.md)
+
 
 # 其他
 
