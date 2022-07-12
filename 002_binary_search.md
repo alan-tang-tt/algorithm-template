@@ -75,6 +75,46 @@ class Solution {
 
 最后返回语句中的 left 换成 right 也是可以的，注意 while 条件不带等号。
 
+# 小于等于target的数
+
+```java
+private int search(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left < right) {
+        int mid = (left + right + 1) / 2;
+        if (nums[mid] <= target) {
+            left = mid;
+        } else {
+            right = mid - 1;
+        }
+    }
+    if (nums[right] > target) {
+        return -1;
+    }
+    return right;
+}
+```
+
+# 大于等于target的数
+
+```java
+private int search(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left < right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] >= target) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
+    }
+    if (nums[right] < target) {
+        return -1;
+    }
+    return right;
+}
+```
+
 # 示例
 
 704. 二分查找：https://leetcode-cn.com/problems/binary-search/
