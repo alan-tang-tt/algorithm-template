@@ -42,9 +42,9 @@ class UnionFind {
 }
 ```
 
-## 题目
+## 题目1：省份数量
 
-[547. 省份数量](https://leetcode.cn/problems/number-of-provinces/)
+链接：[547. 省份数量](https://leetcode.cn/problems/number-of-provinces/)
 
 ```java
 class Solution {
@@ -106,7 +106,9 @@ class Solution {
 }
 ```
 
-[785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)
+## 题目2：判断二分图
+
+链接：[785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)
 
 ```java
 class Solution {
