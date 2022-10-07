@@ -14,31 +14,31 @@ class NumArray {
         this.n = nums.length;
         this.trees = new int[n + 1];
         for (int i = 0; i < n; i++) {
-            add(trees, i + 1, nums[i]);
+            add(i + 1, nums[i]);
         }
     }
     
     public void update(int index, int val) {
-        add(trees, index + 1, val - arr[index]);
+        add(index + 1, val - arr[index]);
         arr[index] = val;
     }
     
     public int sumRange(int left, int right) {
-        return presum(trees, right + 1) - presum(trees, left);
+        return presum(right + 1) - presum(left);
     }
 
-    private int lowbit(int i) {
-        return i & -i;
+    private int lowbit(int x) {
+        return x & -x;
     }
 
-    private void add(int[] trees, int i, int val) {
+    private void add(int i, int val) {
         while (i <= n) {
             trees[i] += val;
             i += lowbit(i);
         }
     }
 
-    private int presum(int[] trees, int i) {
+    private int presum(int i) {
         int sum = 0;
         while (i > 0) {
             sum += trees[i];
