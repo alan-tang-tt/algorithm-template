@@ -20,10 +20,6 @@ class UnionFind {
         return father[x] == x ? x : (father[x] = find(father[x]));
     }
 
-    boolean isConnected(int x, int y) {
-        return find(x) == find(y);
-    }
-
     void union(int x, int y) {
         int fx = find(x);
         int fy = find(y);
